@@ -16,7 +16,7 @@ If you want to change the port you can override it via env `export GRPC_PORT=<yo
 
 You can build and run the server app via make command
 ```bash
-export GRPC_POST=8080
+export GRPC_PORT=8080
 make
 ```
 
