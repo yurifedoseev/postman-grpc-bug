@@ -20,5 +20,5 @@ export GRPC_PORT=8080
 make
 ```
 
-I'm using Postman v11.3.1 to check the issue
+I'm using Postman v11.3.1 (Windows 11) to check the issue
 <img src="assets/postman.png">
