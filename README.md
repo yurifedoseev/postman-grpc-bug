@@ -3,8 +3,8 @@ Steps to reproduce the bug
 Install make and protobuf-compiler
 ```bash
 sudo apt update
-sudo install make
-sudo install protobuf-compiler=3.21.12-8.2build1
+sudo apt install make
+sudo apt install protobuf-compiler=3.21.12-8.2build1
 ````
 
 Check installed version via
