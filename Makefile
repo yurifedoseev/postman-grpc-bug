@@ -1,5 +1,5 @@
 include go.env.mk
-PROTO_PATH := ../../proto
+PROTO_PATH := proto
 
 run: build
 	./cmd/backend
@@ -9,8 +9,8 @@ build: proto
 
 proto: godeps clean
 	protoc \
-	--go_out=. \
-	--go-grpc_out=require_unimplemented_servers=false:. \
+	--go_out=pkg/proto \
+	--go-grpc_out=require_unimplemented_servers=false:pkg/proto \
 	--proto_path=$(PROTO_PATH) \
 	$(shell find $(PROTO_PATH) -name *.proto)
 
