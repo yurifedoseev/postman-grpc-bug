@@ -1,0 +1,16 @@
+syntax = "proto3";
+package arcade.v1;
+option go_package = "proto/api";
+
+service Backend {
+  rpc Call(CallRequest) returns (CallResponse);
+}
+
+message CallRequest {
+  string name = 1;
+  map<string, string> dict = 2;
+}
+
+message CallResponse {
+  string message = 1;
+}
