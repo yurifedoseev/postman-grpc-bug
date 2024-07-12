@@ -1,3 +1,5 @@
+Update: the issue has been solved https://github.com/postmanlabs/postman-app-support/issues/12997
+
 Steps to reproduce the bug
 
 Install make and protobuf-compiler
